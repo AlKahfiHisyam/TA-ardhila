@@ -6,7 +6,7 @@
             </div>
 			<div class="card mb-3">
 			  <div class="card-header bg-primary text-white">
-			    Filter Transaksi Penerimaan Pajak
+			    Filter Data SPT
 			  </div>
 			  <div class="card-body">
 			    <form class="form-inline">
@@ -43,7 +43,7 @@
 
 					  
 					    <button type="submit" class="btn btn-primary mb-2 ml-auto"><i class="fas fa-eye"></i>Tampilkan Data</button>
-					    <a href="" class="btn btn-success mb-2 ml-3"><i class="fas fa-plus"></i>Input Transaksi</a>
+					    <a href="" class="btn btn-success mb-2 ml-3"><i class="fas fa-plus"></i>Input SPT</a>
 					  </div>
 					</form>
 			  </div>
@@ -62,10 +62,30 @@
 			 ?>
 
             <div class="alert alert-info">
-            	Menampilkan Data Transaksi Penerimaan Pajak Bulan: <span class="font-weight-bold"><?php echo $bulan ?></span>  Tahun: <span class="font-weight-bold"><?php echo $tahun ?></span>
+            	Menampilkan Data SPT Bulan: <span class="font-weight-bold"><?php echo $bulan ?></span>  Tahun: <span class="font-weight-bold"><?php echo $tahun ?></span>
             </div>
 
-            
+<table class="table table-bordered table-striped">
+            	<tr>
+            		<td class="text-center">No</td>
+            		<td class="text-center">NOP</td>
+            		<td class="text-center">NPWP</td>
+            		<td class="text-center">Wajib Pajak</td>
+            		<td class="text-center">Bumi</td>
+            		<td class="text-center">Bangunan</td>
+            		<td class="text-center">Alamat Objek</td>
+            		<td class="text-center">Alamat Pemilik</td>
+            		<td class="text-center">NJOP Dasar</td>
+            		<td class="text-center">NJOPTK</td>
+            		<td class="text-center">NJOP Perhitungan</td>
+            		<td class="text-center">PBB Terutang</td>
+            		<td class="text-center">Jatuh Tempo</td>
+            		<td class="text-center">Action</td>
+            	</tr>
+            	
+            </table>
+
+
         
 
         </div>
