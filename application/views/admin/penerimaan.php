@@ -65,7 +65,24 @@
             	Menampilkan Data Transaksi Penerimaan Pajak Bulan: <span class="font-weight-bold"><?php echo $bulan ?></span>  Tahun: <span class="font-weight-bold"><?php echo $tahun ?></span>
             </div>
 
-            
+            <table class="table table-bordered table-striped">
+            	<tr>
+            		<td class="text-center">No</td>
+            		<td class="text-center">NOP</td>
+            		<td class="text-center">NPWP</td>
+            		<td class="text-center">Wajib Pajak</td>
+            		<td class="text-center">Bumi</td>
+            		<td class="text-center">Bangunan</td>
+            		<td class="text-center">Alamat Objek</td>
+            		<td class="text-center">Alamat Pemilik</td>
+            		<td class="text-center">PBB Terutang</td>
+            		<td class="text-center">Pembayaran</td>
+            		<td class="text-center">Penagih</td>
+            		<td class="text-center">Action</td>
+            	</tr>
+            	
+            </table>
+
         
 
         </div>

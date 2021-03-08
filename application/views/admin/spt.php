@@ -65,7 +65,7 @@
             	Menampilkan Data SPT Bulan: <span class="font-weight-bold"><?php echo $bulan ?></span>  Tahun: <span class="font-weight-bold"><?php echo $tahun ?></span>
             </div>
 
-<table class="table table-bordered table-striped">
+			<table class="table table-bordered table-striped">
             	<tr>
             		<td class="text-center">No</td>
             		<td class="text-center">NOP</td>
