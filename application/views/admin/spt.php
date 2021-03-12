@@ -61,7 +61,7 @@
 				}
 			 ?>
 
-            <div class="alert alert-info">
+            <div class="alert alert-info px-3">
             	Menampilkan Data SPT Bulan: <span class="font-weight-bold"><?php echo $bulan ?></span>  Tahun: <span class="font-weight-bold"><?php echo $tahun ?></span>
             </div>
 
