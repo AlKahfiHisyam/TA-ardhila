@@ -43,7 +43,7 @@
 
 					  
 					    <button type="submit" class="btn btn-primary mb-2 ml-auto"><i class="fas fa-eye"></i>Tampilkan Data</button>
-					    <a href="" class="btn btn-success mb-2 ml-3"><i class="fas fa-plus"></i>Input SPT</a>
+					    <a href="<?php echo base_url('admin/spt/tambahData') ?>" class="btn btn-success mb-2 ml-3"><i class="fas fa-plus"></i>Input SPT</a>
 					  </div>
 					</form>
 			  </div>

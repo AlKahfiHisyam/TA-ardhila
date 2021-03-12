@@ -43,7 +43,7 @@
 
 					  
 					    <button type="submit" class="btn btn-primary mb-2 ml-auto"><i class="fas fa-eye"></i>Tampilkan Data</button>
-					    <a href="" class="btn btn-success mb-2 ml-3"><i class="fas fa-plus"></i>Input Transaksi</a>
+					    <a href="<?php echo base_url('admin/penerimaan/tambahData') ?>" class="btn btn-success mb-2 ml-3"><i class="fas fa-plus"></i>Input Transaksi</a>
 					  </div>
 					</form>
 			  </div>
@@ -61,8 +61,8 @@
 				}
 			 ?>
 
-            <div class="alert alert-info">
-            	Menampilkan Data Transaksi Penerimaan Pajak Bulan: <span class="font-weight-bold"><?php echo $bulan ?></span>  Tahun: <span class="font-weight-bold"><?php echo $tahun ?></span>
+            <div class="alert alert-info px-3">
+            	Menampilkan Data Transaksi Penerimaan Bulan: <span class="font-weight-bold"><?php echo $bulan ?></span>  Tahun: <span class="font-weight-bold"><?php echo $tahun ?></span>
             </div>
 
             <table class="table table-bordered table-striped">
@@ -77,6 +77,7 @@
             		<td class="text-center">Alamat Pemilik</td>
             		<td class="text-center">PBB Terutang</td>
             		<td class="text-center">Pembayaran</td>
+            		<td class="text-center">Tanggal Dibayar</td>
             		<td class="text-center">Penagih</td>
             		<td class="text-center">Action</td>
             	</tr>
