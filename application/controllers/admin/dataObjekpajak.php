@@ -51,7 +51,8 @@ class DataObjekpajak extends CI_Controller
 	public function updateData($id)
 	{
 		$where = array('id_objekpajak' => $id);
-		$data['title'] = "Update Data Objek Pajak";
+		$data['title'] = "Update Data Objek Pajak";		
+		$data['wajibpajak'] = $this->pajakModel->get_data('data_wajibpajak')->result();
 		$data['objekpajak'] = $this->pajakModel->update_data_objekpajak($id);
 		$this->load->view('templates_admin/header', $data);
 		$this->load->view('templates_admin/sidebar', $data);
@@ -65,6 +66,7 @@ class DataObjekpajak extends CI_Controller
 		if ($this->form_validation->run() == FALSE) {
 			$this->updateData();
 		} else {
+			$id					= $this->input->post('id_objekpajak');
 			$nop					= $this->input->post('nop');
 			$nama_wajibpajak		= $this->input->post('nama_wajibpajak');
 			$alamat_objekpajak		= $this->input->post('alamat_objekpajak');

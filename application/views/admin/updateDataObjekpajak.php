@@ -21,8 +21,11 @@
                             </div>
                             <div class="form-group">
                                 <label>Nama Wajib Pajak</label>
-                                <input type="text" id="nama_wajibpajak" name="nama_wajibpajak" class="form-control" value="<?php echo $o->nama_wajibpajak ?>">
-                                <?php echo form_error('nama_wajibpajak', '<div class="text-small text-danger"></div>') ?>
+                                <select type="text" name="nama_wajibpajak" class="form-control">
+                                    <?php foreach($wajibpajak as $wp):?>
+                                        <option value="<?php echo $wp->id_wajibpajak?>"><?php echo $wp->nama_wajibpajak?></option>
+                                    <?php endforeach;?>    
+                                </select>                          
                             </div>
                             <div class="form-group">
                                 <label>Alamat Objek Pajak</label>

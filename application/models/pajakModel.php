@@ -30,6 +30,5 @@ class PajakModel extends CI_model{
 		$this->db->join('data_wajibpajak', 'data_objekpajak.id_wajibpajak = data_wajibpajak.id_wajibpajak');
 		$query = $this->db->get();
 		return $query->result();
-		
 	}
 }
