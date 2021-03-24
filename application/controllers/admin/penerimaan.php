@@ -14,6 +14,8 @@ class penerimaan extends CI_Controller
 	{
 		$data['title'] = "Tambah Data Penerimaan Pajak";
 		$data['wajibpajak'] = $this->pajakModel->get_data('data_wajibpajak')->result();
+		$data['objekpajak'] = $this->pajakModel->get_data('data_objekpajak')->result();
+		$data['pegawai'] = $this->pajakModel->get_data('data_pegawai')->result();
 		$this->load->view('templates_admin/header', $data);
 		$this->load->view('templates_admin/sidebar', $data);
 		$this->load->view('admin/tambahDataPenerimaan', $data);
