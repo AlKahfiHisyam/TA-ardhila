@@ -73,8 +73,8 @@
             		<td class="text-center">Wajib Pajak</td>
             		<td class="text-center">Bumi</td>
             		<td class="text-center">Bangunan</td>
-            		<td class="text-center">Alamat Objek</td>
             		<td class="text-center">Alamat Pemilik</td>
+            		<td class="text-center">Alamat Objek</td>
             		<td class="text-center">NJOP Dasar</td>
             		<td class="text-center">NJOPTK</td>
             		<td class="text-center">NJOP Perhitungan</td>
@@ -82,7 +82,31 @@
             		<td class="text-center">Jatuh Tempo</td>
             		<td class="text-center">Action</td>
             	</tr>
-            	
+
+            	<?php $no=1; foreach($spt as $s) : ?>
+        		<tr>
+        			<td><?php echo $no++ ?></td>
+        			<td><?php echo $s->nop ?></td>
+        			<td><?php echo $s->npwp ?></td>
+        			<td><?php echo $s->nama_wajibpajak ?></td>
+        			<td><?php echo $s->luas_bumi ?></td>
+        			<td><?php echo $s->luas_bangunan ?></td>
+        			<td><?php echo $s->alamat_wajibpajak ?></td>
+        			<td><?php echo $s->alamat_objekpajak ?></td>
+        			<td>Rp.<?php echo number_format($s->njop_dasar,0,',','.') ?></td>
+        			<td>Rp.<?php echo number_format($s->njoptk,0,',','.') ?></td>
+        			<td>Rp.<?php echo number_format($s->njop_dasar - $s->njoptk,0,',','.') ?></td>
+        			<td>Rp.<?php echo number_format($s->njop_perhitungan,0,',','.') ?></td>
+        			<td><?php echo $s->tgl_jatuhtempo ?></td>
+
+        			<td>
+        				<center>
+        					<a class="btn btn-sm btn-primary" href="<?php echo base_url('admin/spt/updateData/'.$s->id_spt) ?>"><i class="fas fa-edit"></i></a>
+        					<a onclick="return confirm('Yakin Hapus')"class="btn btn-sm btn-danger" href="<?php echo base_url('admin/spt/deletedata/'.$s->id_spt) ?>"><i class="fas fa-trash"></i></a>
+        				</center>
+        			</td>
+        		</tr>
+        	<?php endforeach; ?>
             </table>
 
 

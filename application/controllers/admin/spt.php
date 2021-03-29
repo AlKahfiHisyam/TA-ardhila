@@ -5,6 +5,9 @@ class spt extends CI_Controller
 	public function index()
 	{
 		$data['title'] = "Data Surat Pemberitahuan Pajak (SPT)";
+		$data['spt'] = $this->pajakModel->get_data('spt')->result();
+		$data['wajibpajak'] = $this->pajakModel->get_data('data_wajibpajak')->result();
+		$data['objekpajak'] = $this->pajakModel->get_data('data_objekpajak')->result();
 		$this->load->view('templates_admin/header', $data);
 		$this->load->view('templates_admin/sidebar', $data);
 		$this->load->view('admin/spt', $data);
@@ -13,6 +16,7 @@ class spt extends CI_Controller
 	public function tambahData()
 	{
 		$data['title'] = "Tambah Data SPT";
+		$data['spt'] = $this->pajakModel->get_data('spt')->result();
 		$data['wajibpajak'] = $this->pajakModel->get_data('data_wajibpajak')->result();
 		$data['objekpajak'] = $this->pajakModel->get_data('data_objekpajak')->result();
 		$this->load->view('templates_admin/header', $data);

@@ -67,21 +67,6 @@
                 <?php echo form_error('njop_dasar','<div class="text-small text-danger"></div>') ?>
             </div>
             <div class="form-group">
-                <label>NJOPTK</label>
-                <input type="text" name="njoptk" class="form-control">
-                <?php echo form_error('njoptk','<div class="text-small text-danger"></div>') ?>
-            </div>
-            <div class="form-group">
-                <label>NJOP Perhitungan</label>
-                <input type="text" name="njop_perhitungan" class="form-control">
-                <?php echo form_error('njop_perhitungan','<div class="text-small text-danger"></div>') ?>
-            </div>
-            <div class="form-group">
-                <label>PBB Terutang</label>
-                <input type="text" name="pbb_terutang" class="form-control">
-                <?php echo form_error('pbb_terutang','<div class="text-small text-danger"></div>') ?>
-            </div>
-            <div class="form-group">
                 <label>Jatuh Tempo</label>
                 <input type="text" name="tgl_jatuhtempo" class="form-control">
                 <?php echo form_error('tgl_jatuhtempo','<div class="text-small text-danger"></div>') ?>
